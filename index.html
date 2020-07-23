@@ -1,0 +1,149 @@
+<!--Antes de iniciar o projeto, vc deve criar um repositório no github -> "clone with https", entrar no git bash e 
+clicar com o botão direito do mouse e clicar em paste. logo após "ls". depois vá em "abrir uma pasta" no visualstudio code
+e selecione a pasta que você criou com o git bash. e aí, já pode começar a operar. criar um index, etc...-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"> <!--sempre usar essa tag para que o programa reconheça o teclado brasileiro.-->
+        <title>Pedro página</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--dentro do documento html eu tenho que informar que ele tem que olhar para um css
+        que está em outro arquivo, e para isso se usa o elemto "link"-->
+    </head>
+
+    <body>
+        <nav>
+            <p>Minha página</p>
+            <ul>
+                <li> <a href="#serviços">SERVIÇOS</a> </li>
+                <li> <a href="#clientes">CLIENTES</a> </li>
+                <li> <a href="#parceiros">PARCEIROS</a> </li>
+                <li> <a href="#time">TIME</a> </li>
+                <li> <a href="#contato">CONTATO</a> </li>
+            </ul>
+        </nav>
+
+        <!-- A tag <a> é usada para a criação de hiperlinks, o href é usado para criar uma referência,
+        e aí vc informa para onde vai te levar. Se é pra um site, pra um email, um telefone, outra parte do site...
+        para levar para outra parte do site tem que usar o #. o # vai mostrar que oq vem depois dele é uma id-->
+
+        <p>Minha primeira página</p>
+
+        <header>
+            <h1>Minha página</h1>
+            <p>
+                Oferecemos o desenvolvimento dos melhores
+                sites e aplicativos para a sua empresa
+            </p>
+        </header>
+
+          <!-- a função section é utilizada para criar seções dentro do site. 
+          exepmlo: um ste de notícias que tem as seções esporte, entretenimentoe etc...-->
+        
+        <section id="serviços">
+          <h2>SERVIÇOS</h2>
+          <p>
+              Oferecemos os melhores serviços em
+               desenvolvimento de sites e aplicativos
+               Oferecemos os melhores serviços em
+               desenvolvimento de sites e aplicativos
+               Oferecemos os melhores serviços em
+               desenvolvimento de sites e aplicativos
+               Oferecemos os melhores serviços em
+               desenvolvimento de sites e aplicativos
+               Oferecemos os melhores serviços em
+               desenvolvimento de sites e aplicativos
+               Oferecemos os melhores serviços em
+               desenvolvimento de sites e aplicativos
+               Oferecemos os melhores serviços em
+               desenvolvimento de sites e aplicativos
+               Oferecemos os melhores serviços em
+               desenvolvimento de sites e aplicativos
+          </p>
+
+          <!--Nota:Um repositório gratuito de imagens chamado pexel (pexel.com). 
+           DEpois da imagem baixada, é só arrastar pra pasta img.-->
+
+          <div>
+              <img src="img/person-holding-a-smartphone-892757.jpg" width="300px" class="img_padrao">
+          </div>
+          <div>
+              <img src="img/code-coder-coding-computer-270404.jpg" width="300px" class="img_padrao">
+          </div>
+        </section>
+        
+          <!--assim como tem o jogo da velha para identificar ID o ponto identifica
+           que oque vem depois é o nome da classe no style.css. Aqui no index não é necessário.
+        
+           O width, assim como outros atributos de estilo da imagem, também pode ser definido
+           dentro do style.css, bastar adicionar uma etiqueta de class no index.html-->
+
+        <section id="clientes">
+            <h2>CLIENTES</h2>
+            <p>Nossos clientes ficaram muito satisfeitos com nossos serviços</p>
+            <div>
+                <img src="img/top-view-photo-of-people-near-wooden-table-3183150.jpg" class="img_padrao">
+            </div>
+            <div>
+                <img src="img/group-of-people-sitting-indoors-3184291.jpg" class="img_padrao">
+            </div>
+        </section>
+
+        <section id="parceiros">
+            <h2>PARCEIROS</h2>
+            <p>
+                Nossos parceiros nos ajudam a entregar as
+                melhores soluções para nossos clientes
+            </p>
+            <!--para que o link abra outra guia ao invés de transformar a página atual,
+            usa-se "target="_blank"" após o link-->
+            <div>
+                <a href="https://www.academiapme.com.br/" target="_blank">
+                    <img src="img/academiapme.logo.jpg" class="img_padrao">
+                </a>
+            </div>
+            <div>
+                <a href="https://digitalinnovation.one/" target="_blank">
+                    <img src="img/DIOlogo.png" class="img_padrao">
+                </a>
+            </div>
+        </section>
+
+        <section id="time">
+            <h2>TIME</h2>
+            <p>
+                Nosso time trabalha com muita qualidade e empenho para entregar
+                o melhor produto para nossos clientes
+            </p>
+            <div>
+                <img src="img/photo-of-people-near-wooden-table-3184418.jpg" class="img_padrao">
+            </div>
+            <div>
+                <img src="img/man-and-woman-near-table-3184465.jpg" class="img_padrao">
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>CONTATO</h2>
+            <P>
+                Entre em contato com nossa equipe
+            </P>
+            <div>
+                <img src="img/fone-300x300.png" class="logo">
+                <P><a href="tell:9999999999">(99) 9999-9999</a></P>
+            </div>
+            <div>
+                <img src="img/email.png" class="logo">
+                <p><a href="mailto:contato@empresa.com">contato@empresa.com</a></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Desenvolvido por Pedro Torres</p>
+        </footer>
+
+    </body>
+    <!--No css usa-se "." para classe e "#" para id -->
+
+</html>
